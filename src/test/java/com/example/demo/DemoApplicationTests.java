@@ -4,11 +4,8 @@ import static org.hamcrest.Matchers.*;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.By;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
 import io.restassured.RestAssured;
@@ -45,7 +42,7 @@ public class DemoApplicationTests {
         given().get("/posts/2").prettyPrint();
 
     }
-
+/*
     @Test
     public void test2 () {
     	 Configuration.browser = WebDriverRunner.CHROME;
@@ -56,5 +53,6 @@ public class DemoApplicationTests {
     	    SelenideElement element = Selenide.$(By.name("q"));
     	    element.val("selenide").pressEnter();
     }
+    */
 
 }
