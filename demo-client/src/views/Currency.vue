@@ -26,7 +26,7 @@
         <el-col :span="24">
             <el-card class="box-card">
                 <div slot="header" class="clearfix">
-                    <span>仮想通貨一覧</span>
+                    <span>仮想通貨一覧aa</span>
                 </div>
                 <el-table
                         :data="currencies"
