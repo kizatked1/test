@@ -1,0 +1,13 @@
+resources:
+- name: test
+  type: git
+  source:
+    uri: https://github.com/kizatked1/test.git
+
+jobs:
+- name: testrun
+  plan:
+  - get: test
+    trigger: true
+  - task: run-test
+    file: .test/demo/src/test/java/com/example/demo/DemoApplicationTests.java
