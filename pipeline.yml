@@ -10,4 +10,4 @@ jobs:
   - get: test
     trigger: true
   - task: run-test
-    file: .test/demo/src/test/java/com/example/demo/DemoApplicationTests.java
+    file: test/demo/src/test/java/com/example/demo/DemoApplicationTests.java
